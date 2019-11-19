@@ -15,6 +15,9 @@
 		AB211BC4222F16CF00B2D1AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB211BC2222F16CF00B2D1AC /* LaunchScreen.storyboard */; };
 		AB211BCF222F16CF00B2D1AC /* PhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB211BCE222F16CF00B2D1AC /* PhotoAlbumTests.swift */; };
 		AB211BDA222F16CF00B2D1AC /* PhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB211BD9222F16CF00B2D1AC /* PhotoAlbumUITests.swift */; };
+		AB6BFE1322581F6B00EE072E /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AB6BFE1222581F6B00EE072E /* Inceptionv3.mlmodel */; };
+		ABC26721224C068C00D852BA /* LiveDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC26720224C068C00D852BA /* LiveDetection.swift */; };
+		ABCEF6092257F5B100DC4366 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEF6082257F5B100DC4366 /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		AB211BD5222F16CF00B2D1AC /* PhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB211BD9222F16CF00B2D1AC /* PhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		AB211BDB222F16CF00B2D1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6BFE1222581F6B00EE072E /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		ABC26720224C068C00D852BA /* LiveDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetection.swift; sourceTree = "<group>"; };
+		ABCEF6082257F5B100DC4366 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				AB211BB6222F16CD00B2D1AC /* AppDelegate.swift */,
-				AB211BB8222F16CD00B2D1AC /* ViewController.swift */,
-				AB211BBA222F16CD00B2D1AC /* Main.storyboard */,
+				AB6BFE152258215D00EE072E /* Model */,
+				AB6BFE142258212B00EE072E /* Controller's */,
+				AB59F0222284994F003764E0 /* View */,
 				AB211BC0222F16CF00B2D1AC /* Assets.xcassets */,
-				AB211BC2222F16CF00B2D1AC /* LaunchScreen.storyboard */,
 				AB211BC5222F16CF00B2D1AC /* Info.plist */,
-				AB211BBD222F16CD00B2D1AC /* PhotoAlbum.xcdatamodeld */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -126,6 +131,34 @@
 				AB211BDB222F16CF00B2D1AC /* Info.plist */,
 			);
 			path = PhotoAlbumUITests;
+			sourceTree = "<group>";
+		};
+		AB59F0222284994F003764E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB211BBA222F16CD00B2D1AC /* Main.storyboard */,
+				AB211BC2222F16CF00B2D1AC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB6BFE142258212B00EE072E /* Controller's */ = {
+			isa = PBXGroup;
+			children = (
+				ABCEF6082257F5B100DC4366 /* HomePage.swift */,
+				AB211BB8222F16CD00B2D1AC /* ViewController.swift */,
+				ABC26720224C068C00D852BA /* LiveDetection.swift */,
+			);
+			path = "Controller's";
+			sourceTree = "<group>";
+		};
+		AB6BFE152258215D00EE072E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB6BFE1222581F6B00EE072E /* Inceptionv3.mlmodel */,
+				AB211BBD222F16CD00B2D1AC /* PhotoAlbum.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC26721224C068C00D852BA /* LiveDetection.swift in Sources */,
+				ABCEF6092257F5B100DC4366 /* HomePage.swift in Sources */,
 				AB211BBF222F16CD00B2D1AC /* PhotoAlbum.xcdatamodeld in Sources */,
 				AB211BB9222F16CD00B2D1AC /* ViewController.swift in Sources */,
 				AB211BB7222F16CD00B2D1AC /* AppDelegate.swift in Sources */,
+				AB6BFE1322581F6B00EE072E /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96F5HH742M;
 				INFOPLIST_FILE = PhotoAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96F5HH742M;
 				INFOPLIST_FILE = PhotoAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
